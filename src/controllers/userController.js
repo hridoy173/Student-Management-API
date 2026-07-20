@@ -1,8 +1,7 @@
+const userService = require("../services/userService");
 const asyncHandler = require("../middlewares/asyncHandler");
-
 const successResponse = require("../utils/successResponse");
 
-const userService = require("../services/userService");
 
 const getUsers = asyncHandler(async (req, res) => {
 
@@ -11,7 +10,6 @@ const getUsers = asyncHandler(async (req, res) => {
     return successResponse(res, {
 
         message: "Users fetched successfully",
-
         data: users
 
     });
