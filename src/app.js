@@ -7,7 +7,6 @@ const errorHandler = require("./middlewares/errorHandler");
 const notFound = require("./middlewares/notFound");
 
 
-
 // Middleware to parse JSON request bodies
 app.use(express.json());
 
