@@ -10,15 +10,11 @@ const successResponse = (
      
 
 ) => {
-
     return res.status(statusCode).json({
 
         success: true,
-
         message,
-
         meta,
-
         data
 
     });

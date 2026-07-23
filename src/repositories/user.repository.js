@@ -10,8 +10,16 @@ class UserRepository {
         return await User.findById(id);
     }
 
-    async findByEmail(email) {
-        return await User.findOne({ email });
+    async findByEmail(email, includePassword = false) {
+
+        let query = User.findOne({ email });
+
+        if (includePassword) {
+            query = query.select("+password");
+        }
+
+        return await query;
+
     }
 
     async create(payload) {

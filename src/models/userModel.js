@@ -96,9 +96,8 @@ userSchema.index({
 // একটি কাস্টম ফাংশন comparePassword যুক্ত করা হয়েছে। এটি দিয়ে ব্যবহারকারীর দেওয়া ইনপুট পাসওয়ার্ড এবং
 //  ডাটাবেজে সেভ থাকা হ্যাশ করা পাসওয়ার্ড মিলিয়ে দেখা হয় (লগইনের সময় প্রয়োজন হয়)।
 
-userSchema.methods.comparePassword =
-async function (password) {
-
+userSchema.methods.comparePassword = async function (password) {
+    
     return await bcrypt.compare(
         password,
         this.password
