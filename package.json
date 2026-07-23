@@ -4,9 +4,9 @@
   "description": "আমরা ব্যবহার করব  ✅ Node.js ✅ Express.js ✅ MongoDB ✅ Mongoose ✅ JWT ✅ Bcrypt ✅ Zod ✅ Multer ✅ Cloudinary ✅ Nodemailer ✅ Cookie Parser ✅ Helmet ✅ CORS ✅ Morgan ✅ dotenv",
   "main": "index.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "nodemon src/server.js",
-      "start": "node src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hridoy173/Student-Management-API#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
